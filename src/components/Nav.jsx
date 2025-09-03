@@ -4,7 +4,6 @@ export default function Nav() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-40">
       <div className="container mx-auto py-3 flex items-center justify-between px-4">
-        {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
             S
@@ -12,7 +11,6 @@ export default function Nav() {
           <div className="text-lg font-semibold text-gray-900">SchoolApp</div>
         </div>
 
-        {/* Navigation */}
         <nav className="flex items-center gap-3">
           <NavLink
             to="/schools"

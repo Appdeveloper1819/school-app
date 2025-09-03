@@ -42,12 +42,10 @@ const AddSchool = () => {
   return (
     <div className="min-h-screen w-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-white to-purple-200 p-10">
       <div className="w-full max-w-5xl bg-white/90 backdrop-blur-xl shadow-2xl rounded-3xl p-12 border border-white/30">
-        {/* Title */}
         <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-10 tracking-wide">
           Add New School
         </h2>
 
-        {/* Form */}
         <form onSubmit={handleSubmit(onSubmit)} className="w-full space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <input
@@ -94,7 +92,6 @@ const AddSchool = () => {
             />
           </div>
 
-          {/* File Upload */}
           <div className="flex flex-col items-center justify-center p-10 border-2 border-dashed rounded-xl bg-blue-50/60 hover:bg-blue-50/80 transition cursor-pointer">
             <input
               type="file"
@@ -118,7 +115,6 @@ const AddSchool = () => {
             </label>
           </div>
 
-          {/* Preview */}
           {preview && (
             <div className="flex justify-center">
               <img
@@ -129,7 +125,6 @@ const AddSchool = () => {
             </div>
           )}
 
-          {/* Submit Button */}
           <button
             type="submit"
             className="w-full py-5 rounded-xl font-semibold text-xl text-white shadow-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-[1.02] active:scale-95 transition transform"
@@ -138,7 +133,6 @@ const AddSchool = () => {
           </button>
         </form>
 
-        {/* Messages */}
         {error && (
           <p className="mt-6 text-red-600 text-center font-semibold text-lg">
             {error}
